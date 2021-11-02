@@ -2,28 +2,28 @@ extends layout
 
 block content
   h1= title
-   p saiteja kattamuri
-    div(class = "container-fluid ")
+  p Earphone results
+  div(class="container-fluid")
         div(class="row")
-          -
-            let earphones = [
+            -
+                let mattress = [
                     {
-                        "brand": "Sony",
-                        "earbudsModel": "Circle",
+                        "brand": "centuary",
+                        "earbudsModel": "cotton",
                         "jackMM": 1
                     },
                     {
-                        "brand": "Motorolla",
-                        "earbudsModel": "Triangle",
+                        "brand": "sleepwell",
+                        "earbudsModel": "cotton",
                         "jackMM": 2
                     },
                     {
-                        "brand": "Skullcandy",
-                        "earbudsModel": "Buds",
+                        "brand": "relaxo",
+                        "earbudsModel": "cotton",
                         "jackMM": 3
                     },                   
                 ]
-            each v,index in bakery
-                div(class="col-sm-2" ) #{v.brand}
-                div(class="col-sm-2" ) #{v.earbudsModel}
-                div(class="col-sm-2" ) #{v.jackMM}
+            each v,index in mattress
+                div(class="col-sm-2") #{v.brand}
+                div(class="col-sm-2") #{v.earbudsModel}
+                div(class="col-sm-2") #{v.jackMM}
